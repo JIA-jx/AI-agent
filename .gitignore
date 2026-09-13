@@ -1,0 +1,10 @@
+.idea
+tools/docker/data
+tools/docker/plugins
+src/mcp-server/internal/tool/params.go
+src/app/etc/config-prod.yml
+core/ai/tools/params.go
+src/a2a-server/etc/config-prod.yml
+/.github/
+/docker
+/.claude

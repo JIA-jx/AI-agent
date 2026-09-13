@@ -1,0 +1,86 @@
+package agents
+
+import (
+	"model"
+
+	"github.com/google/uuid"
+)
+
+type CreateAgentReq struct {
+	Name        string            `json:"name"`
+	Description string            `json:"description"`
+	Status      model.AgentStatus `json:"status"`
+	Mode        model.AgentMode   `json:"mode"`
+	DeepConfig  model.JSON        `json:"deepConfig"`
+}
+
+type SearchAgentReq struct {
+	Params struct {
+		Name     string            `json:"name"`
+		Status   model.AgentStatus `json:"status"`
+		Page     int               `json:"page"`
+		PageSize int               `json:"pageSize"`
+	} `json:"params"`
+}
+
+type UpdateAgentReq struct {
+	ID              uuid.UUID         `json:"id"`
+	Name            string            `json:"name"`
+	Description     string            `json:"description"`
+	Status          model.AgentStatus `json:"status"`
+	SystemPrompt    string            `json:"systemPrompt"`
+	ModelProvider   string            `json:"modelProvider"`
+	ModelName       string            `json:"modelName"`
+	ModelParameters model.JSON        `json:"modelParameters"`
+	OpeningDialogue string            `json:"openingDialogue"`
+	Mode            model.AgentMode   `json:"mode"`
+	DeepConfig      model.JSON        `json:"deepConfig"`
+}
+type AgentMessageReq struct {
+	AgentID   uuid.UUID  `json:"agentId"`
+	Message   string     `json:"message"`
+	SessionId *uuid.UUID `json:"sessionId,omitempty"`
+}
+
+type UpdateAgentToolReq struct {
+	Tools []ToolItem `json:"tools"`
+}
+
+type ToolItem struct {
+	ID   uuid.UUID `json:"id"`
+	Type string    `json:"type"`
+}
+
+type addAgentKnowledgeBaseReq struct {
+	KnowledgeBaseID uuid.UUID `json:"kb_id"`
+}
+
+type AgentMarketRequest struct {
+	AgentMarketIds []uuid.UUID `json:"agentMarketIds"`
+	AgentId        uuid.UUID   `json:"agentId"`
+}
+
+type DeleteAgentMarketRequest struct {
+	AgentMarketId uuid.UUID `json:"agentMarketId"`
+	AgentId       uuid.UUID `json:"agentId"`
+}
+
+type addWorkflowToAgentReq struct {
+	WorkflowID uuid.UUID `json:"workflow_id"`
+	Status     string    `json:"status"`
+	Priority   int       `json:"priority"`
+	IsDefault  bool      `json:"is_default"`
+}
+
+type createSessionRequest struct {
+	AgentID uuid.UUID `json:"agentId"`
+	Title   string    `json:"title"`
+}
+
+type listSessionsRequest struct {
+	AgentID string `json:"agentId" form:"agentId"`
+}
+
+type AddAgentSkillReq struct {
+	SkillIDs []uuid.UUID `json:"skillIds"`
+}

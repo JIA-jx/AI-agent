@@ -1,0 +1,60 @@
+app:
+  name: "aiDemo"
+server:
+  mode: "debug" # gin的模式: debug, release, test
+  host: "127.0.0.1" # 监听地址和端口
+  port: 8888
+  readTimeout: 10s # 读取超时时间（秒）
+  writeTimeout: 10s # 写入超时时间（秒）
+  cors:
+    -  "*"
+auth:
+  isAuth: true
+  ignores:
+    - "/api/v1/auth/**"
+    - "/health"
+  needLogins:
+    - "/api/v1/agents/**"
+    - "/api/v1/tools/**"
+    - "/api/v1/provider-configs/**"
+    - "/api/v1/llms/**"
+log:
+  level: "info"
+  format: "json"
+  addSource: true
+db:
+  postgres:
+    host: "127.0.0.1"
+    port: 15432
+    user: "demo2"
+    password: "demo2"
+    database: "faber-ai"
+    sslMode: "disable"
+    maxIdleConns: 10
+    maxOpenConns: 100
+    pingTimeout: 5s
+  redis:
+    addr: "127.0.0.1:6379"
+email:
+  host: "smtp.163.com"
+  port: 25
+  username: "mrimagination259@163.com"
+  password: ""
+  from: "mrimagination259@163.com"
+  baseUrl: "http://localhost:8888"
+jwt:
+  secret: "aiDemo"
+  expire: 7h
+  refresh: 240h
+
+# Elasticsearch 配置
+elasticsearch:
+  addresses:
+    - "http://localhost:9200"
+  username: "elastic"
+  password: "demo2123456!@#$"
+
+# Milvus 配置
+milvus:
+  address: "localhost:19530"
+  dbName: "default"

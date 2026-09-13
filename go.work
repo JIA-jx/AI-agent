@@ -1,0 +1,12 @@
+go 1.25.5
+
+use (
+	./src/a2a-server
+	agent-mem
+	./src/app
+	./tools/common
+	core
+	./src/mcp-server
+	./tools/model
+	thunder
+)

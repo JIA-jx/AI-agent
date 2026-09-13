@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: aiDemo-app-service
+  namespace: aiDemo
+  labels:
+    app: aiDemo-app
+spec:
+  selector:
+    app: aiDemo-app
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8888
+      protocol: TCP
+  type: ClusterIP
