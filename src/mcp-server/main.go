@@ -3,9 +3,9 @@ package main
 import (
 	"mcp-server/internal/inits"
 
-	"thunder/config"
-	"thunder/logs"
-	"thunder/server"
+	"basemodel/config"
+	"basemodel/logs"
+	"basemodel/server"
 )
 
 func main() {

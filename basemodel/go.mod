@@ -1,4 +1,4 @@
-module thunder
+module basemodel
 
 go 1.25.5
 

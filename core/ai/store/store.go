@@ -4,8 +4,8 @@ import (
 	"context"
 	"sync"
 
+	"basemodel/logs"
 	"github.com/cloudwego/eino/compose"
-	"thunder/logs"
 )
 
 type inMemoryStore struct {

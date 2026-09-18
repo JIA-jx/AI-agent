@@ -20,12 +20,12 @@ import (
 	"strings"
 	"time"
 
-	"thunder/ai/einos"
-	"thunder/config"
-	"thunder/database"
-	"thunder/errs"
-	"thunder/event"
-	"thunder/logs"
+	"basemodel/ai/einos"
+	"basemodel/config"
+	"basemodel/database"
+	"basemodel/errs"
+	"basemodel/event"
+	"basemodel/logs"
 
 	"github.com/PuerkitoBio/goquery"
 	"github.com/cloudwego/eino-ext/components/document/loader/file"

@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
+	"basemodel/ai/einos"
 	"github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/schema"
-	"thunder/ai/einos"
 )
 
 type HTMLToPPTTool struct {

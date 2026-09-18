@@ -4,9 +4,9 @@ import (
 	"app/internal/inits"
 	_ "time/tzdata"
 
-	"thunder/config"
-	"thunder/logs"
-	"thunder/server"
+	"basemodel/config"
+	"basemodel/logs"
+	"basemodel/server"
 )
 
 func main() {

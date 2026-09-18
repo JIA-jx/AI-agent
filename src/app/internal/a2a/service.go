@@ -5,12 +5,12 @@ import (
 	"context"
 	"model"
 
+	"basemodel/ai/a2a"
+	"basemodel/database"
+	"basemodel/errs"
+	"basemodel/logs"
 	models2 "github.com/cloudwego/eino-ext/a2a/models"
 	"github.com/google/uuid"
-	"thunder/ai/a2a"
-	"thunder/database"
-	"thunder/errs"
-	"thunder/logs"
 )
 
 type service struct {

@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"net/url"
 
+	"basemodel/ai/einos"
 	"github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/schema"
-	"thunder/ai/einos"
 )
 
 type WeatherTool struct {

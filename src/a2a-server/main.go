@@ -1,10 +1,10 @@
 package main
 
 import (
+	"basemodel/config"
 	"context"
 	"core/ai/tools"
 	"fmt"
-	"thunder/config"
 
 	"github.com/cloudwego/eino-ext/a2a/extension/eino"
 	"github.com/cloudwego/eino-ext/a2a/transport/jsonrpc"

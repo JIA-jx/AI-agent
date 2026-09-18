@@ -10,11 +10,11 @@ import (
 	"path/filepath"
 	"strings"
 
+	"basemodel/logs"
 	"github.com/cloudwego/eino-ext/components/model/ollama"
 	"github.com/cloudwego/eino-ext/components/model/openai"
 	"github.com/cloudwego/eino-ext/components/model/qwen"
 	"github.com/cloudwego/eino/schema"
-	"thunder/logs"
 )
 
 const Prompt = `# 角色

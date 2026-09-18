@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"time"
 
-	"thunder/logs"
+	"basemodel/logs"
 
 	"github.com/cloudwego/eino/schema"
 )

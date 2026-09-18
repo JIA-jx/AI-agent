@@ -5,11 +5,11 @@ import (
 	"net/http"
 	"time"
 
+	"basemodel/logs"
+	"basemodel/req"
+	"basemodel/res"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"thunder/logs"
-	"thunder/req"
-	"thunder/res"
 )
 
 type Handler struct {

@@ -9,6 +9,8 @@ import (
 	"strings"
 	"time"
 
+	"basemodel/ai/einos"
+	"basemodel/logs"
 	"github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/schema"
 	appsv1 "k8s.io/api/apps/v1"
@@ -18,8 +20,6 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 	"k8s.io/client-go/util/homedir"
-	"thunder/ai/einos"
-	"thunder/logs"
 )
 
 type K8sClient struct {

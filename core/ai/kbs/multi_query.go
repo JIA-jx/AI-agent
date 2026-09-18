@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 
-	"thunder/logs"
+	"basemodel/logs"
 
 	einoModel "github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/schema"
@@ -128,7 +128,7 @@ func extractQuotedStrings(s string) []string {
 
 type MQERetriever struct {
 	expander QueryExpander // 查询扩展器
-	inner    interface { // 内部检索器（支持泛型接口）
+	inner    interface {   // 内部检索器（支持泛型接口）
 		Search(ctx context.Context, query string, filters SearchFilter) ([]*schema.Document, error)
 	}
 	cfg HybridConfig // 混合检索配置

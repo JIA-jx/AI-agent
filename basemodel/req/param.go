@@ -3,11 +3,11 @@ package req
 import (
 	"strconv"
 
+	"basemodel/errs"
+	"basemodel/logs"
+	"basemodel/res"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"thunder/errs"
-	"thunder/logs"
-	"thunder/res"
 )
 
 func JsonParam(c *gin.Context, obj any) error {

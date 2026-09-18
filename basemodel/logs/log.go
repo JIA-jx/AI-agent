@@ -12,7 +12,7 @@ import (
 	"strings"
 	"time"
 
-	"thunder/config"
+	"basemodel/config"
 )
 
 var defaultLogger *slog.Logger

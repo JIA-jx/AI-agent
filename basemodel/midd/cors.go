@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"strings"
 
+	"basemodel/config"
 	"github.com/gin-gonic/gin"
-	"thunder/config"
 )
 
 func Cors(conf *config.Server) gin.HandlerFunc {

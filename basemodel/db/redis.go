@@ -1,9 +1,9 @@
 package db
 
 import (
+	"basemodel/config"
 	"context"
 	"github.com/redis/go-redis/v9"
-	"thunder/config"
 	"time"
 )
 

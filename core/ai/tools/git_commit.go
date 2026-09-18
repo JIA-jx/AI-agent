@@ -1,6 +1,7 @@
 package tools
 
 import (
+	"basemodel/ai/einos"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -10,7 +11,6 @@ import (
 	"os/exec"
 	"regexp"
 	"strings"
-	"thunder/ai/einos"
 )
 
 type GitCommitTool struct {

@@ -6,11 +6,11 @@ import (
 	"core/ai"
 	"model"
 
+	"basemodel/database"
+	"basemodel/errs"
+	"basemodel/logs"
+	"basemodel/res"
 	"github.com/google/uuid"
-	"thunder/database"
-	"thunder/errs"
-	"thunder/logs"
-	"thunder/res"
 )
 
 type service struct {

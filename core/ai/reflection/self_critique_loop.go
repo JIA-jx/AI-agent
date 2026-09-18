@@ -5,17 +5,17 @@ import (
 	"encoding/json"
 	"strings"
 
-	"thunder/logs"
+	"basemodel/logs"
 
 	"github.com/cloudwego/eino/adk"
 )
 
 // ReAct 循环外加自检迭代   行为：
-//   1. 第一轮 runner.Query(question) → 收集所有事件
-//   2. Critique 评估第一轮答案
-//   3. 如果不够好 + 未达最大轮次 → BuildRevisedQuery → 第二轮 runner.Query
-//   4. 重复直到通过或耗尽轮次
-//   5. 把所有事件（含中间轮次的事件）串联返回
+//  1. 第一轮 runner.Query(question) → 收集所有事件
+//  2. Critique 评估第一轮答案
+//  3. 如果不够好 + 未达最大轮次 → BuildRevisedQuery → 第二轮 runner.Query
+//  4. 重复直到通过或耗尽轮次
+//  5. 把所有事件（含中间轮次的事件）串联返回
 type runnerIter interface {
 	Next() (*adk.AgentEvent, bool)
 }

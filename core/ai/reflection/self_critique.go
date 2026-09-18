@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"thunder/logs"
+	"basemodel/logs"
 
 	einoModel "github.com/cloudwego/eino/components/model"
 	"github.com/cloudwego/eino/schema"

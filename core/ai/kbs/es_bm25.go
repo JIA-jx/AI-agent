@@ -6,9 +6,9 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"basemodel/logs"
 	"github.com/cloudwego/eino/schema"
 	"github.com/elastic/go-elasticsearch/v8"
-	"thunder/logs"
 )
 
 type ESBM25Retriever struct {

@@ -1,9 +1,9 @@
 package server
 
 import (
+	"basemodel/config"
+	"basemodel/midd"
 	"github.com/gin-gonic/gin"
-	"thunder/config"
-	"thunder/midd"
 )
 
 type IRouter interface {

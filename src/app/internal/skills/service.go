@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
+	"basemodel/database"
+	"basemodel/logs"
 	"github.com/go-git/go-git/v5"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
-	"thunder/database"
-	"thunder/logs"
 )
 
 type service struct {

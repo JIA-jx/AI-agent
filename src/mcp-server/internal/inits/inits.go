@@ -3,7 +3,7 @@ package inits
 import (
 	"mcp-server/internal/router"
 
-	"thunder/server"
+	"basemodel/server"
 )
 
 func Init(s *server.Server) {

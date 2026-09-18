@@ -5,10 +5,10 @@ import (
 	"model"
 	"time"
 
+	"basemodel/database"
+	"basemodel/errs"
+	"basemodel/logs"
 	"github.com/google/uuid"
-	"thunder/database"
-	"thunder/errs"
-	"thunder/logs"
 )
 
 type service struct {

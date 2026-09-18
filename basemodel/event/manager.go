@@ -1,6 +1,6 @@
 package event
 
-import "thunder/errs"
+import "basemodel/errs"
 
 type Event struct {
 	Name string

@@ -1,6 +1,6 @@
 package biz
 
-import "thunder/errs"
+import "basemodel/errs"
 
 var (
 	ErrUserNameExisted  = errs.NewError(10001, "用户名已存在")

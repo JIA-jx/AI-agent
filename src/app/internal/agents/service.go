@@ -20,11 +20,11 @@ import (
 	"sync"
 	"time"
 
-	"thunder/ai/einos"
-	"thunder/database"
-	"thunder/errs"
-	"thunder/event"
-	"thunder/logs"
+	"basemodel/ai/einos"
+	"basemodel/database"
+	"basemodel/errs"
+	"basemodel/event"
+	"basemodel/logs"
 
 	"github.com/cloudwego/eino-ext/a2a/client"
 	"github.com/cloudwego/eino-ext/a2a/extension/eino"

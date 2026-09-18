@@ -9,7 +9,7 @@ import (
 	"model"
 	"strings"
 
-	"thunder/logs"
+	"basemodel/logs"
 
 	"github.com/cloudwego/eino-ext/adk/backend/local"
 	"github.com/cloudwego/eino/adk"

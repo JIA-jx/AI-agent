@@ -8,5 +8,5 @@ use (
 	core
 	./src/mcp-server
 	./tools/model
-	thunder
+	basemodel
 )

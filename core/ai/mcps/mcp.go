@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"strings"
 
+	"basemodel/ai/einos"
 	mcpp "github.com/cloudwego/eino-ext/components/tool/mcp"
 	"github.com/cloudwego/eino/components/tool"
 	"github.com/mark3labs/mcp-go/client"
 	"github.com/mark3labs/mcp-go/client/transport"
 	"github.com/mark3labs/mcp-go/mcp"
-	"thunder/ai/einos"
 )
 
 // GetEinoBaseTools Eino 兼容的工具列表

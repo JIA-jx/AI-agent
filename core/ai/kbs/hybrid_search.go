@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sort"
 
+	"basemodel/logs"
 	"github.com/cloudwego/eino/schema"
-	"thunder/logs"
 )
 
 type HybridConfig struct {
@@ -20,8 +20,9 @@ type HybridConfig struct {
 }
 
 // HybridRetriever 两阶段混合检索编排器：
-//	 Stage 1: Vector topK + BM25 topK → RRF 融合去重
-//	 Stage 2: Rerank cross-encoder 精排 → final topK
+//
+//	Stage 1: Vector topK + BM25 topK → RRF 融合去重
+//	Stage 2: Rerank cross-encoder 精排 → final topK
 type HybridRetriever struct {
 	vector VectorRetriever
 	bm25   BM25Retriever

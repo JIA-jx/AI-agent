@@ -1,11 +1,11 @@
 package model
 
 import (
+	"basemodel/ai/einos"
 	"github.com/cloudwego/eino-ext/components/embedding/dashscope"
 	"github.com/cloudwego/eino-ext/components/embedding/ollama"
 	"github.com/cloudwego/eino-ext/components/embedding/openai"
 	"github.com/google/uuid"
-	"thunder/ai/einos"
 )
 
 var (

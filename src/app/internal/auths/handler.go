@@ -1,9 +1,9 @@
 package auths
 
 import (
+	"basemodel/req"
+	"basemodel/res"
 	"github.com/gin-gonic/gin"
-	"thunder/req"
-	"thunder/res"
 )
 
 type Handler struct {

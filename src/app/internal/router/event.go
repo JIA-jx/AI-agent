@@ -5,7 +5,7 @@ import (
 	"app/internal/llms"
 	"app/internal/tools"
 
-	"thunder/event"
+	"basemodel/event"
 )
 
 type Event struct {

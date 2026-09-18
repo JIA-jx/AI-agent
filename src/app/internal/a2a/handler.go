@@ -1,10 +1,10 @@
 package a2a
 
 import (
+	"basemodel/req"
+	"basemodel/res"
 	"github.com/gin-gonic/gin"
 	"github.com/google/uuid"
-	"thunder/req"
-	"thunder/res"
 )
 
 type Handler struct {

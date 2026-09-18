@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
+	"basemodel/config"
+	"basemodel/tools/jwt"
 	"github.com/gin-gonic/gin"
-	"thunder/config"
-	"thunder/tools/jwt"
 )
 
 func Auth(authConf *config.Auth) gin.HandlerFunc {

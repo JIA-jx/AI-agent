@@ -1,8 +1,8 @@
 package database
 
 import (
-	"thunder/config"
-	"thunder/db"
+	"basemodel/config"
+	"basemodel/db"
 )
 
 var (

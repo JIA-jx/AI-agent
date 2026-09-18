@@ -11,8 +11,8 @@ import (
 	"model"
 	"strings"
 
-	"thunder/ai/einos"
-	"thunder/logs"
+	"basemodel/ai/einos"
+	"basemodel/logs"
 
 	"github.com/cloudwego/eino-ext/adk/backend/local"
 	"github.com/cloudwego/eino-ext/components/model/ollama"

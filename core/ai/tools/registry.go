@@ -3,7 +3,7 @@ package tools
 import (
 	"context"
 
-	"thunder/ai/einos"
+	"basemodel/ai/einos"
 )
 
 var _register *Registry

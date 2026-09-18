@@ -5,9 +5,9 @@ import (
 	"core/ai/tools"
 	"encoding/json"
 
+	"basemodel/ai/einos"
 	"github.com/cloudwego/eino/schema"
 	"github.com/mark3labs/mcp-go/mcp"
-	"thunder/ai/einos"
 )
 
 type WeatherTool struct {

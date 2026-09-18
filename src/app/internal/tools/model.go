@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"model"
 
+	"basemodel/gorms"
 	"github.com/google/uuid"
 	"gorm.io/gorm"
-	"thunder/gorms"
 )
 
 type models struct {

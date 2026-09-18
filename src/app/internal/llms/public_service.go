@@ -5,9 +5,9 @@ import (
 	"context"
 	"time"
 
-	"thunder/database"
-	"thunder/event"
-	"thunder/logs"
+	"basemodel/database"
+	"basemodel/event"
+	"basemodel/logs"
 )
 
 type PublicService struct {

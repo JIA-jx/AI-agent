@@ -5,11 +5,11 @@ import (
 	"core/ai"
 	"core/ai/tools"
 
-	"thunder/config"
-	"thunder/database"
-	"thunder/logs"
-	"thunder/server"
-	"thunder/tools/jwt"
+	"basemodel/config"
+	"basemodel/database"
+	"basemodel/logs"
+	"basemodel/server"
+	"basemodel/tools/jwt"
 )
 
 func Init(s *server.Server, conf *config.Config) {

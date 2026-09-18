@@ -9,12 +9,12 @@ import (
 	"model"
 	"time"
 
+	"basemodel/ai/einos"
+	"basemodel/database"
+	"basemodel/errs"
+	"basemodel/logs"
+	"basemodel/res"
 	"github.com/google/uuid"
-	"thunder/ai/einos"
-	"thunder/database"
-	"thunder/errs"
-	"thunder/logs"
-	"thunder/res"
 )
 
 type service struct {

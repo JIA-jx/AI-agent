@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"thunder/logs"
+	"basemodel/logs"
 
 	"github.com/cloudwego/eino/adk"
 	einoModel "github.com/cloudwego/eino/components/model"

@@ -1,9 +1,9 @@
 package agents
 
 import (
+	"basemodel/gorms"
 	"context"
 	"model"
-	"thunder/gorms"
 
 	"github.com/google/uuid"
 	"gorm.io/gorm"

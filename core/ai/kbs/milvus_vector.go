@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
+	"basemodel/logs"
 	"github.com/cloudwego/eino-ext/components/indexer/milvus"
 	reMilvus "github.com/cloudwego/eino-ext/components/retriever/milvus"
 	"github.com/cloudwego/eino/components/embedding"
@@ -12,7 +13,6 @@ import (
 	"github.com/cloudwego/eino/schema"
 	"github.com/milvus-io/milvus-sdk-go/v2/client"
 	"github.com/milvus-io/milvus-sdk-go/v2/entity"
-	"thunder/logs"
 )
 
 const vec = 768

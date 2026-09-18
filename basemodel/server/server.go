@@ -10,9 +10,9 @@ import (
 	"syscall"
 	"time"
 
+	"basemodel/config"
+	"basemodel/event"
 	"github.com/gin-gonic/gin"
-	"thunder/config"
-	"thunder/event"
 )
 
 type Server struct {

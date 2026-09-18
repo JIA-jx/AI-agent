@@ -1,8 +1,8 @@
 package router
 
 import (
+	"basemodel/res"
 	"github.com/gin-gonic/gin"
-	"thunder/res"
 )
 
 type HealthRouter struct {

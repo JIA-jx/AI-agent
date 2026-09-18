@@ -1,10 +1,10 @@
 package res
 
 import (
+	"basemodel/errs"
 	"errors"
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"thunder/errs"
 )
 
 type Result struct {
